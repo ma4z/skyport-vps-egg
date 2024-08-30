@@ -1,0 +1,34 @@
+{
+  "Image": "ubuntu:latest",
+  "AltImages": [
+    "ubuntu:latest"
+  ],
+  "Cmd": "",
+  "Env": [
+    "START=bash install.sh"
+  ],
+  "StopCommand": "stop",
+  "features":["eula"],
+  "Scripts": {
+    "Install": [
+      {
+        "Uri": "https://raw.githubusercontent.com/ysdragon/Pterodactyl-VPS-Egg/main/install.sh",
+        "Path": "install.sh"
+      }
+    ]
+  },
+  "Variables": {
+    "Startup": {
+      "type": "text",
+      "default": "bash install.sh",
+      "required": false
+    }
+  },
+  "Name": "VPS EGG",
+  "Description": "FreeVPS EGG IN SKYPORT PANEL",
+  "Author": "ysdragon@gmail.com",
+  "AuthorName": "ma4z",
+  "Meta": {
+    "Version": "Skyport Images v2"
+  }
+}
